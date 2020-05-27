@@ -21,13 +21,12 @@ class GeraQuadrado
       @fatorY = fatorY + 1
       @alturaNew = altura * fatorY
     else 
-      puts "INIRATIO: #{iniRatio}"
+      puts "RUBY: #{iniRatio}"
       puts "Uma PARALELOGRAMO #{largura}x#{altura}, precisa de #{fatorX} linhas e #{fatorY} colunas para formar um quadrado \n\r"
-      puts "TOTALIZANDO #{fatorX*fatorY} peças\n\r\n\r"
       return true
     end
     gera
   end
 end
 
-GeraQuadrado.new(1.23,20.7)
+GeraQuadrado.new(122.19,4.2333)

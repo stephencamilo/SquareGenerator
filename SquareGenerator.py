@@ -18,10 +18,8 @@ class GeraQuadrado:
             self.fatorY = self.fatorY + 1
             self.alturaNew = self.altura * self.fatorY
         else: 
-            print(f"INIRATIO: {self.iniRatio}")
-            print(f"Uma PARALELOGRAMO {self.largura}x{self.altura}, precisa de {self.fatorX} linhas e {self.fatorY} colunas para formar um quadrado \n\r")
-            print(f"TOTALIZANDO {self.fatorX*self.fatorY} peças\n\r\n\r")
+            print(f'PYTH: {self.iniRatio}\n\rUm PARALELOGRAMO {self.largura}x{self.altura}, precisa de {self.fatorX} linhas e {self.fatorY} colunas para formar um quadrado')
             return True
         self.gera()
 
-GeraQuadrado(12323,2.23)
+GeraQuadrado(122.19,4.2333)
