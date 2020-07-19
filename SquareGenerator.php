@@ -9,11 +9,17 @@ class GeraQuadrado{
         private $ratio;
         private $iniRatio;
 
-        function __construct($x,$y){
-                $this->largura = $this->larguraNew = $x;
-                $this->altura = $this->alturaNew = $y;
+        function __construct(){
+                $this->largura = 13.19323757;
+                $this->altura = 19323757.2339;
+                $this->larguraNew = $this->largura;
+                $this->alturaNew = $this->altura;
                 $this->iniRatio = $this->larguraNew / $this->alturaNew;
-                $this->gera();
+                $this->ratio = $this->larguraNew / $this->alturaNew;
+                while($this->ratio != 1){
+                        $this->gera();
+                }
+                var_dump("PHP: ".$this->iniRatio."\n\rUma PARALELOGRAMO ".$this->largura."x".$this->altura.", precisa de ".$this->fatorX." linhas e ".$this->fatorY." colunas para formar um quadrado\n\r");
         }
 
         function gera(){
@@ -22,12 +28,9 @@ class GeraQuadrado{
                         $this->larguraNew = $this->largura * ++$this->fatorX;
                 } else if($this->ratio > 1){
                         $this->alturaNew = $this->altura * ++$this->fatorY;
-                } else {
-                        echo "PHPP: $this->iniRatio\n\rUma PARALELOGRAMO {$this->largura}x{$this->altura}, precisa de $this->fatorX linhas e $this->fatorY colunas para formar um quadrado\n\r";
-                        return true;
                 }
-                $this->gera();
+                //var_dump("RATIO: ".$this->ratio);
         }
 }
 
-$a = new GeraQuadrado(122.19,4.2333);
+$a = new GeraQuadrado();
