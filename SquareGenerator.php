@@ -19,7 +19,8 @@ class GeraQuadrado{
                 while($this->ratio != 1){
                         $this->gera();
                 }
-                var_dump("PHP: ".$this->iniRatio."\n\rUma PARALELOGRAMO ".$this->largura."x".$this->altura.", precisa de ".$this->fatorX." linhas e ".$this->fatorY." colunas para formar um quadrado\n\r");
+                var_dump("PHP: ".$this->iniRatio);
+                var_dump("Uma PARALELOGRAMO ".$this->largura."x".$this->altura.", precisa de ".$this->fatorX." linhas e ".$this->fatorY." colunas para formar um quadrado\n\r");
         }
 
         function gera(){
